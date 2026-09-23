@@ -1,114 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rayzum | Building Value. Creating Tomorrow.</title>
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#050505;color:#fff;line-height:1.7}
-nav{position:fixed;top:0;width:100%;z-index:999;background:rgba(0,0,0,.88);backdrop-filter:blur(12px);padding:18px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(212,175,55,.25)}
-.brand{display:flex;align-items:center;gap:12px;font-weight:bold;color:#d4af37;letter-spacing:2px}
-.brand img{width:42px;height:42px;object-fit:contain;border-radius:8px}
-.menu a{color:#fff;text-decoration:none;margin-left:26px;font-size:15px;opacity:.9}
-.menu a:hover{color:#d4af37}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:130px 8% 70px;background:radial-gradient(circle at top,#1b1607,#050505 55%)}
-.hero img{width:220px;max-width:80%;margin-bottom:25px}
-.hero h1{font-size:58px;color:#d4af37;margin-bottom:18px}
-.hero p{font-size:21px;max-width:850px;margin:auto;color:#e6e6e6}
-.btn{display:inline-block;margin-top:34px;padding:15px 38px;background:#d4af37;color:#000;text-decoration:none;border-radius:40px;font-weight:bold}
-section{padding:95px 10%}
-h2{font-size:44px;color:#d4af37;margin-bottom:24px}
-.lead{font-size:19px;max-width:1000px;color:#ddd}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:38px}
-.card{background:linear-gradient(145deg,#121212,#090909);border:1px solid rgba(212,175,55,.18);padding:32px;border-radius:22px;transition:.3s}
-.card:hover{transform:translateY(-7px);border-color:#d4af37}
-.card h3{font-size:24px;margin-bottom:10px;color:#fff}
-.card p{color:#cfcfcf}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-.box{background:#101010;border:1px solid rgba(212,175,55,.18);padding:35px;border-radius:24px}
-.contact{background:linear-gradient(145deg,#111,#080808);border:1px solid rgba(212,175,55,.25);border-radius:25px;padding:38px}
-footer{text-align:center;padding:38px;background:#070707;color:#aaa;border-top:1px solid rgba(212,175,55,.18)}
-@media(max-width:768px){
-.menu{display:none}
-.hero h1{font-size:36px}
-.hero p{font-size:17px}
-h2{font-size:34px}
-section{padding:75px 7%}
-.split{grid-template-columns:1fr}
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rayzum | Okul, Otel & Yurt Tekstili</title>
+  <meta name="description" content="Rayzum; okul kıyafetleri, otel ve yurt tekstili için kurumsal toplu sipariş ve hızlı WhatsApp teklif çözümü sunar." />
+  <meta name="theme-color" content="#071426" />
+  <meta property="og:title" content="Rayzum | Kurumsal Tekstil Çözümleri" />
+  <meta property="og:description" content="Okul kıyafetleri, otel ve yurt tekstili için hızlı teklif alın." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rayzum.com/" />
+  <link rel="canonical" href="https://rayzum.com/" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Rayzum",
+    "url":"https://rayzum.com",
+    "areaServed":"TR",
+    "contactPoint":{
+      "@type":"ContactPoint",
+      "telephone":"+90-532-161-98-63",
+      "contactType":"sales",
+      "availableLanguage":["Turkish"]
+    }
+  }
+  </script>
 </head>
-
 <body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Rayzum ana sayfa">
+      <span class="brand-mark">R</span>
+      <span class="brand-text">RAYZUM</span>
+    </a>
 
-<nav>
-<div class="brand">
-<img src="logo.png" alt="Rayzum Logo">
-<span>RAYZUM</span>
-</div>
-<div class="menu">
-<a href="#about">Hakkımızda</a>
-<a href="#areas">Faaliyetler</a>
-<a href="#vision">Vizyon</a>
-<a href="#contact">İletişim</a>
-</div>
-</nav>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="#cozumler">Çözümler</a>
+      <a href="#okul">Okul Tekstili</a>
+      <a href="#otel">Otel & Yurt</a>
+      <a href="#neden">Neden Rayzum?</a>
+    </nav>
 
-<header class="hero">
-<div>
-<img src="logo.png" alt="Rayzum Logo">
-<h1>Building Value. Creating Tomorrow.</h1>
-<p>Rayzum; yatırım, üretim, inovasyon ve marka geliştirme alanlarında uzun vadeli değer üretmeyi hedefleyen bağımsız bir girişim grubudur.</p>
-<a href="#about" class="btn">Rayzum'u Keşfet</a>
-</div>
-</header>
+    <a class="btn btn-sm" href="#teklif">Teklif Al</a>
+  </header>
 
-<section id="about">
-<h2>Hakkımızda</h2>
-<p class="lead">
-Rayzum, fikirleri değere, emeği yapıya ve vizyonu sürdürülebilir başarıya dönüştürmek amacıyla kurulmuştur. Uzun vadeli düşünür, gerçek değer üretir ve insan odağını kaybetmeden büyür.
-</p>
-</section>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">KURUMSAL TEKSTİL TEDARİĞİ</div>
+        <h1>Okuldan otele,<br><span>tek noktadan teklif.</span></h1>
+        <p>
+          Okul kıyafetleri, yurt ve otel tekstili için ihtiyacınızı seçin;
+          ürün, adet ve teslimat bilgilerini girin. Teklif talebiniz doğrudan
+          WhatsApp üzerinden Rayzum'a ulaşsın.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#teklif">Hızlı Teklif Oluştur</a>
+          <a class="btn btn-ghost" href="https://wa.me/905321619863" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
 
-<section id="areas">
-<h2>Faaliyet Alanları</h2>
-<div class="grid">
-<div class="card"><h3>Yatırım</h3><p>Uzun vadeli büyüme potansiyeli taşıyan projelere odaklanır.</p></div>
-<div class="card"><h3>Üretim</h3><p>Katma değer yaratan üretim ve tedarik süreçleri geliştirir.</p></div>
-<div class="card"><h3>İnovasyon</h3><p>Yeni fikirleri sürdürülebilir iş modellerine dönüştürür.</p></div>
-<div class="card"><h3>Marka Geliştirme</h3><p>Farklı sektörlerde kalıcı ve güçlü markalar inşa eder.</p></div>
-<div class="card"><h3>Teknoloji</h3><p>Dijital dönüşüm ve yeni nesil çözümler üzerine çalışır.</p></div>
-<div class="card"><h3>Stratejik Ortaklıklar</h3><p>Uzun vadeli iş birlikleriyle büyüme ekosistemi oluşturur.</p></div>
-</div>
-</section>
+        <div class="trust-row">
+          <div><strong>Kurumsal</strong><span>toplu sipariş</span></div>
+          <div><strong>Esnek</strong><span>ürün & adet</span></div>
+          <div><strong>Hızlı</strong><span>WhatsApp teklif</span></div>
+        </div>
+      </div>
 
-<section id="vision">
-<div class="split">
-<div class="box">
-<h2>Vizyon</h2>
-<p>Farklı sektörlerde kalıcı markalar inşa eden, uluslararası ölçekte değer üreten ve geleceğin şirketlerini şekillendiren bir yapı olmak.</p>
-</div>
-<div class="box">
-<h2>Misyon</h2>
-<p>İnsan odaklı, yenilikçi ve sürdürülebilir iş modelleri oluşturarak fikirleri güçlü yapılara dönüştürmek.</p>
-</div>
-</div>
-</section>
+      <div class="hero-card">
+        <div class="mini-label">RAYZUM TEDARİK AKIŞI</div>
+        <div class="flow-item"><span>01</span><div><b>İhtiyacını seç</b><small>Okul / Otel / Yurt</small></div></div>
+        <div class="flow-item"><span>02</span><div><b>Detayları gir</b><small>Ürün, adet, ölçü, teslimat</small></div></div>
+        <div class="flow-item"><span>03</span><div><b>WhatsApp'a gönder</b><small>Hazır teklif özeti otomatik oluşur</small></div></div>
+        <div class="flow-item"><span>04</span><div><b>Teklifini al</b><small>Rayzum ekibi dönüş sağlar</small></div></div>
+      </div>
+    </section>
 
-<section id="contact">
-<h2>İletişim</h2>
-<div class="contact">
-<p><strong>E-posta:</strong> info@rayzum.com</p>
-<p><strong>Konum:</strong> Ankara, Türkiye</p>
-<p><strong>Web:</strong> www.rayzum.com</p>
-</div>
-</section>
+    <section class="section" id="cozumler">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">ÇÖZÜMLER</div>
+          <h2>İki ana alanda hızlı tedarik</h2>
+        </div>
+        <p>Ürün seçenekleri ve teklif akışı kurum tipine göre ayrıldı.</p>
+      </div>
 
-<footer>
-© 2026 RAYZUM. Tüm Hakları Saklıdır.
-</footer>
+      <div class="cards">
+        <article class="service-card" id="okul">
+          <div class="service-icon">01</div>
+          <h3>Okul Tekstili</h3>
+          <p>Okul adına özel, toplu öğrenci siparişlerine uygun ürün planlaması.</p>
+          <ul>
+            <li>Polo / Bisiklet yaka tişört</li>
+            <li>Pantolon</li>
+            <li>Etek</li>
+            <li>Sweatshirt</li>
+            <li>Eşofman altı / takım</li>
+          </ul>
+          <a href="#teklif" data-select="school" class="text-link">Okul teklifi oluştur →</a>
+        </article>
 
+        <article class="service-card" id="otel">
+          <div class="service-icon">02</div>
+          <h3>Otel & Yurt Tekstili</h3>
+          <p>Konaklama işletmeleri ve yurtlar için toplu oda tekstili tedariki.</p>
+          <ul>
+            <li>Çarşaf</li>
+            <li>Nevresim</li>
+            <li>Yastık kılıfı</li>
+            <li>Havlu</li>
+            <li>Bornoz / Ayak havlusu</li>
+          </ul>
+          <a href="#teklif" data-select="hotel" class="text-link">Otel / yurt teklifi oluştur →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="neden">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow eyebrow-light">RAYZUM</div>
+          <h2>Teklif sürecini sadeleştiriyoruz.</h2>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature"><b>01</b><h3>Tek mesajda net ihtiyaç</h3><p>Ürün, adet, kurum ve teslimat bilgileri tek formatta toplanır.</p></div>
+        <div class="feature"><b>02</b><h3>Kuruma göre özelleştirme</h3><p>Okul adı, logo/baskı notu, beden dağılımı ve özel talepler eklenebilir.</p></div>
+        <div class="feature"><b>03</b><h3>Mobil odaklı teklif</h3><p>Formdan çıkan özet tek dokunuşla WhatsApp'a aktarılır.</p></div>
+      </div>
+    </section>
+
+    <section class="section quote-section" id="teklif">
+      <div class="quote-intro">
+        <div class="eyebrow">HIZLI TEKLİF</div>
+        <h2>İhtiyacını bize gönder.</h2>
+        <p>Formu doldurduğunda teklif özeti otomatik hazırlanır. “WhatsApp ile Gönder” dediğinde mesaj Rayzum hattında hazır açılır.</p>
+      </div>
+
+      <div class="quote-box">
+        <div class="segmented" role="tablist" aria-label="Teklif türü">
+          <button class="segment active" type="button" data-type="school">Okul Tekstili</button>
+          <button class="segment" type="button" data-type="hotel">Otel & Yurt</button>
+        </div>
+
+        <form id="quoteForm">
+          <input type="hidden" id="quoteType" value="school" />
+
+          <div class="form-grid">
+            <label>
+              Kurum / Firma adı
+              <input id="company" required placeholder="Örn. ABC Koleji / XYZ Otel" />
+            </label>
+            <label>
+              Yetkili adı
+              <input id="contactName" required placeholder="Ad Soyad" />
+            </label>
+            <label>
+              Telefon
+              <input id="phone" inputmode="tel" placeholder="05xx xxx xx xx" />
+            </label>
+            <label>
+              Teslimat şehri
+              <input id="city" placeholder="Örn. Ankara" />
+            </label>
+          </div>
+
+          <div id="schoolFields">
+            <div class="subhead">
+              <h3>Okul sipariş bilgileri</h3>
+              <p>İstersen yaklaşık öğrenci sayısını ve beden/baskı notlarını da ekleyebilirsin.</p>
+            </div>
+            <div class="form-grid">
+              <label>
+                Okul adı
+                <input id="schoolName" placeholder="Örn. Rayzum Koleji" />
+              </label>
+              <label>
+                Yaklaşık öğrenci sayısı
+                <input id="studentCount" type="number" min="1" placeholder="Örn. 350" />
+              </label>
+            </div>
+            <div class="product-grid">
+              <label class="product"><input type="checkbox" value="Polo / Tişört" data-group="school"><span>Polo / Tişört</span><input class="qty" data-product="Polo / Tişört" type="number" min="1" placeholder="Adet"></label>
+              <label class="product"><input type="checkbox" value="Pantolon" data-group="school"><span>Pantolon</span><input class="qty" data-product="Pantolon" type="number" min="1" placeholder="Adet"></label>
+              <label class="product"><input type="checkbox" value="Etek" data-group="school"><span>Etek</span><input class="qty" data-product="Etek" type="number" min="1" placeholder="Adet"></label>
+              <label class="product"><input type="checkbox" value="Sweatshirt" data-group="school"><span>Sweatshirt</span><input class="qty" data-product="Sweatshirt" type="number" min="1" placeholder="Adet"></label>
+              <label class="product"><input type="checkbox" value="Eşofman" data-group="school"><span>Eşofman</span><input class="qty" data-product="Eşofman" type="number" min="1" placeholder="Adet"></label>
+            </div>
+          </div>
+
+          <div id="hotelFields" hidden>
+            <div class="subhead">
+              <h3>Otel / yurt sipariş bilgileri</h3>
+              <p>Ölçü, kumaş veya gramaj gibi detayları not bölümüne yazabilirsin.</p>
+            </div>
+            <div class="product-grid">
+              <label class="product"><input type="checkbox" value="Çarşaf" data-group="hotel"><span>Çarşaf</span><input class="qty" data-product="Çarşaf" type="number" min="1" placeholder="Adet"></label>
+              <label class="product"><input type="checkbox" value="Nevresim" data-group="hotel"><span>Nevresim</span><input class="qty" data-product="Nevresim" type="number" min="1" placeholder="Adet"></label>
+              <label class="product"><input type="checkbox" value="Yastık kılıfı" data-group="hotel"><span>Yastık kılıfı</span><input class="qty" data-product="Yastık kılıfı" type="number" min="1" placeholder="Adet"></label>
+              <label class="product"><input type="checkbox" value="Banyo havlusu" data-group="hotel"><span>Banyo havlusu</span><input class="qty" data-product="Banyo havlusu" type="number" min="1" placeholder="Adet"></label>
+              <label class="product"><input type="checkbox" value="El havlusu" data-group="hotel"><span>El havlusu</span><input class="qty" data-product="El havlusu" type="number" min="1" placeholder="Adet"></label>
+              <label class="product"><input type="checkbox" value="Ayak havlusu" data-group="hotel"><span>Ayak havlusu</span><input class="qty" data-product="Ayak havlusu" type="number" min="1" placeholder="Adet"></label>
+              <label class="product"><input type="checkbox" value="Bornoz" data-group="hotel"><span>Bornoz</span><input class="qty" data-product="Bornoz" type="number" min="1" placeholder="Adet"></label>
+            </div>
+          </div>
+
+          <label class="wide">
+            Notlar / Ölçüler / Baskı / Beden dağılımı
+            <textarea id="notes" rows="5" placeholder="Örn. lacivert polo, sol göğüs okul logosu; nevresim 160x220; teslimat 3 hafta içinde..."></textarea>
+          </label>
+
+          <label class="wide">
+            Hedef teslim tarihi
+            <input id="deliveryDate" type="date" />
+          </label>
+
+          <div class="preview" id="messagePreview">
+            <div class="preview-title">Teklif özeti</div>
+            <pre id="previewText">Bilgileri doldurmaya başladığında teklif özeti burada görünecek.</pre>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-full" type="submit">WhatsApp ile Gönder</button>
+            <button class="btn btn-ghost-dark" type="button" id="copyBtn">Özeti Kopyala</button>
+          </div>
+
+          <p class="form-note">WhatsApp hattı: <a href="tel:+905321619863">0532 161 98 63</a></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">SIK SORULANLAR</div>
+          <h2>Teklif öncesi bilmen gerekenler</h2>
+        </div>
+      </div>
+      <details><summary>Minimum sipariş adedi var mı?</summary><p>Ürün ve üretim tipine göre değişebilir. Adedi teklif formunda belirt; uygun üretim seçeneği buna göre değerlendirilir.</p></details>
+      <details><summary>Okul logosu veya özel baskı yapılabilir mi?</summary><p>Evet. Logo, baskı konumu, renk ve beden dağılımını not alanına ekleyebilirsin.</p></details>
+      <details><summary>Otel tekstilinde farklı ölçüler yazabilir miyim?</summary><p>Evet. Çarşaf, nevresim, havlu ve diğer ürünlerde ölçü/gramaj detaylarını not bölümüne ekleyebilirsin.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <span class="brand-mark">R</span>
+      <div><b>RAYZUM</b><small>Kurumsal tekstil & tedarik çözümleri</small></div>
+    </div>
+    <div class="footer-links">
+      <a href="https://wa.me/905321619863" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#teklif">Teklif Al</a>
+      <a href="#top">Yukarı</a>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Rayzum. Tüm hakları saklıdır.</div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/905321619863" target="_blank" rel="noopener" aria-label="WhatsApp ile iletişim">WA</a>
+
+  <script src="/script.js"></script>
 </body>
 </html>
