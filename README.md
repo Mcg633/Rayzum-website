@@ -41,3 +41,9 @@ Ancak kesin değer olarak Vercel panelinde o anda gösterilen DNS kayıtlarını
 - vercel.json
 - robots.txt
 - sitemap.xml
+
+
+## Kurumsal kimlik güncellemesi
+- Mevcut `logo.png` header, Hakkımızda bölümü ve footer'da kullanılır.
+- Hakkımızda ve Vizyonumuz bölümleri eklendi.
+- Kurumsal konumlandırma: Yatırım · Üretim · İnovasyon.

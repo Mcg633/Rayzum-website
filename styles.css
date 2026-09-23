@@ -24,3 +24,36 @@ a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button{c
 footer{padding:50px clamp(22px,7vw,110px) 30px;background:#06111f;color:#fff}.footer-brand{display:flex;align-items:center;gap:13px}.footer-brand div{display:flex;flex-direction:column}.footer-brand small{color:#7d91aa}.footer-links{display:flex;gap:22px;margin:32px 0;color:#a8b7c9;font-weight:700}.footer-bottom{padding-top:24px;border-top:1px solid rgba(255,255,255,.10);color:#667a92;font-size:13px}.wa-float{position:fixed;right:22px;bottom:22px;z-index:40;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:#1fbf66;color:#fff;font-weight:950;box-shadow:0 16px 34px rgba(0,0,0,.22)}
 @media (max-width:980px){.nav{display:none}.hero{grid-template-columns:1fr;gap:42px}.hero-card{max-width:650px}.quote-section{grid-template-columns:1fr}.quote-intro{position:static}}
 @media (max-width:700px){.topbar{padding:13px 16px}.brand-text{font-size:13px}.topbar>.btn{display:none}.hero{padding:72px 20px}.hero h1{font-size:48px}.hero p{font-size:16px}.trust-row{gap:18px;flex-wrap:wrap}.section{padding:70px 20px}.section-head{display:block}.section-head>p{margin-top:14px}.cards,.feature-grid,.form-grid,.product-grid{grid-template-columns:1fr}.product{grid-template-columns:auto 1fr 82px}.quote-box{padding:18px}.form-actions{grid-template-columns:1fr}.footer-links{flex-wrap:wrap}}
+
+
+/* Rayzum corporate identity */
+.brand-logo-shell,.footer-logo-shell{display:grid;place-items:center;overflow:hidden;border-radius:12px;background:#071426}
+.brand-logo-shell{width:42px;height:42px;box-shadow:0 8px 22px rgba(7,20,38,.16)}
+.brand-logo{width:100%;height:100%;object-fit:cover}
+.footer-logo-shell{width:52px;height:52px}
+.footer-logo{width:100%;height:100%;object-fit:cover}
+
+.corporate-section{background:radial-gradient(circle at 8% 20%,rgba(19,103,255,.06),transparent 24%),#f5f8fc}
+.corporate-grid{display:grid;grid-template-columns:minmax(300px,.8fr) minmax(0,1.2fr);gap:70px;align-items:center}
+.corporate-logo-card{min-height:430px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px;border-radius:30px;background:linear-gradient(145deg,#050b13,#0b1727);box-shadow:0 30px 80px rgba(7,20,38,.16);border:1px solid rgba(255,255,255,.06)}
+.corporate-logo-frame{width:min(300px,80%);aspect-ratio:1/1;display:grid;place-items:center;border-radius:26px;overflow:hidden;background:#03070c}
+.corporate-logo{width:100%;height:100%;object-fit:cover}
+.corporate-brand-line{margin-top:24px;color:#c8a84b;font-size:11px;letter-spacing:.2em;font-weight:900;text-align:center}
+.corporate-copy h2{font-size:clamp(36px,4.5vw,58px);line-height:1.03;letter-spacing:-.045em;margin:0 0 24px}
+.corporate-copy .lead{font-size:18px;color:var(--muted);max-width:760px;margin:0}
+.name-story{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:30px}
+.name-story>div{padding:22px;border:1px solid var(--line);border-radius:18px;background:#fff}
+.name-story span{display:block;color:var(--blue);font-size:24px;font-weight:950;letter-spacing:.08em}
+.name-story p{margin:7px 0 0;color:var(--muted);font-size:14px}
+.brand-quote{margin-top:24px;padding-left:18px;border-left:3px solid var(--blue);font-size:20px;font-weight:800;letter-spacing:-.02em}
+
+.vision-section{background:radial-gradient(circle at 90% 15%,rgba(19,103,255,.20),transparent 28%),#071426;color:#fff}
+.vision-wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.vision-head h2{font-size:clamp(36px,4.7vw,62px);line-height:1.03;letter-spacing:-.05em;margin:0}
+.vision-body{padding-top:34px}
+.vision-body p{color:#b6c5d8;font-size:18px;margin:0 0 18px}
+.vision-pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.vision-pill-row span{padding:9px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.05);color:#dce7f7;font-size:12px;font-weight:800}
+
+@media (max-width:980px){.corporate-grid,.vision-wrap{grid-template-columns:1fr}.corporate-logo-card{min-height:360px}.vision-body{padding-top:0}}
+@media (max-width:700px){.brand-logo-shell{width:38px;height:38px}.corporate-logo-card{min-height:300px;padding:28px}.name-story{grid-template-columns:1fr}.corporate-copy .lead,.vision-body p{font-size:16px}}
