@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rayzum.com/sitemap.xml
+Sitemap: https://www.rayzum.com/sitemap.xml

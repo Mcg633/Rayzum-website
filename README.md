@@ -1,49 +1,13 @@
-# Rayzum Web Sitesi
+# Rayzum
 
-Bu paket statik bir web sitesidir ve Vercel'e doğrudan yüklenebilir.
+Vercel üzerinde çalışan statik Rayzum sitesi.
 
-## İçerik
-- Okul tekstili teklif akışı
-- Otel / yurt tekstili teklif akışı
-- Okul adı, öğrenci sayısı, ürün ve adet alanları
-- Ölçü / baskı / beden / teslimat notları
-- WhatsApp hattı: 0532 161 98 63
-- Otomatik WhatsApp teklif mesajı
-- Mobil uyumlu tasarım
-- SEO meta etiketleri, robots.txt ve sitemap.xml
+- `/` Rayzum markası, faaliyet alanları, marka hikâyesi ve vizyon.
+- `/textile` Rayzum Textile ürün grupları ve okul ile otel/yurt teklif formu. Vercel, `cleanUrls` ayarıyla `textile.html` dosyasını bu adreste sunar.
+- `/textile#teklif` hızlı teklif formunun doğrudan bağlantısı. Eski `/#teklif`, `/#cozumler`, `/#okul`, `/#otel` ve `/#neden` bağlantıları Textile sayfasındaki karşılıklarına gider.
 
-## Vercel'e Yükleme
-1. Vercel hesabına giriş yap.
-2. Add New > Project seç.
-3. Bu klasörü GitHub üzerinden veya Vercel CLI ile yükle.
-4. Framework Preset: Other
-5. Build Command: boş bırak
-6. Output Directory: boş bırak
-7. Deploy et.
+`styles.css` iki sayfanın tasarımını, `quote.css` teklif sayfasındaki formu biçimlendirir. `site.js` mobil menüyü, marka hikâyesi animasyonunu ve eski bağlantıların yönlendirmesini yönetir. `script.js` ürün seçimlerinden teklif özetini üretir ve WhatsApp bağlantısını açar.
 
-## rayzum.com Alan Adını Bağlama
-Vercel proje ekranında:
-Settings > Domains > rayzum.com
+Üretim yayını mevcut Vercel projesine bağlı GitHub deposundan alınır. Dosyalar depo kökünde durur. Build komutu veya paket kurulumu gerekmez. `vercel.json` mevcut yönlendirme kurallarını ve HTTP başlıklarını içerir.
 
-Vercel sana gerekli DNS kayıtlarını gösterecek.
-METUnic panelinde Alan Adı > DNS Yönetimi bölümüne girip Vercel'in verdiği kayıtları birebir ekle.
-
-Genellikle:
-- root domain için A kaydı
-- www için CNAME kaydı
-
-Ancak kesin değer olarak Vercel panelinde o anda gösterilen DNS kayıtlarını kullan.
-
-## Dosyalar
-- index.html
-- styles.css
-- script.js
-- vercel.json
-- robots.txt
-- sitemap.xml
-
-
-## Kurumsal kimlik güncellemesi
-- Mevcut `logo.png` header, Hakkımızda bölümü ve footer'da kullanılır.
-- Hakkımızda ve Vizyonumuz bölümleri eklendi.
-- Kurumsal konumlandırma: Yatırım · Üretim · İnovasyon.
+Canonical, Open Graph ve site haritası, alan adının yönlendirildiği `https://www.rayzum.com` adresini kullanır. İletişim bölümüne kurumsal posta kutusu doğrulandığında bir `mailto:` bağlantısı eklenebilir.

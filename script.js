@@ -7,6 +7,9 @@ const hotelFields = document.getElementById("hotelFields");
 const previewText = document.getElementById("previewText");
 const copyBtn = document.getElementById("copyBtn");
 const segments = document.querySelectorAll(".segment");
+const quotePanels = { school: schoolFields, hotel: hotelFields };
+const copyLabel = copyBtn.textContent;
+let copyReset;
 
 function val(id) {
   return (document.getElementById(id)?.value || "").trim();
@@ -14,12 +17,18 @@ function val(id) {
 
 function selectType(type) {
   typeInput.value = type;
-  const isSchool = type === "school";
-  schoolFields.hidden = !isSchool;
-  hotelFields.hidden = isSchool;
+  for (const [panelType, panel] of Object.entries(quotePanels)) {
+    const inactive = panelType !== type;
+    panel.hidden = inactive;
+    panel.querySelectorAll("input").forEach(input => {
+      input.disabled = inactive;
+    });
+  }
 
   segments.forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.type === type);
+    const active = btn.dataset.type === type;
+    btn.classList.toggle("active", active);
+    btn.setAttribute("aria-pressed", String(active));
   });
 
   updatePreview();
@@ -111,13 +120,14 @@ copyBtn.addEventListener("click", async () => {
   const message = buildMessage();
   try {
     await navigator.clipboard.writeText(message);
-    const old = copyBtn.textContent;
     copyBtn.textContent = "Kopyalandı ✓";
-    setTimeout(() => copyBtn.textContent = old, 1800);
+    clearTimeout(copyReset);
+    copyReset = setTimeout(() => {
+      copyBtn.textContent = copyLabel;
+    }, 1800);
   } catch {
     alert("Kopyalama başarısız oldu. Teklif özetini manuel olarak seçip kopyalayabilirsin.");
   }
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
-updatePreview();
+selectType(typeInput.value);
