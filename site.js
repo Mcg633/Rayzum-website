@@ -49,3 +49,13 @@ if (revealItems.length && "IntersectionObserver" in window &&
     observer.observe(element);
   });
 }
+document.addEventListener("click", (event) => {
+  const whatsappLink = event.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"]');
+
+  if (whatsappLink && typeof gtag === "function") {
+    gtag("event", "whatsapp_click", {
+      link_url: whatsappLink.href,
+      link_text: whatsappLink.textContent.trim()
+    });
+  }
+});
