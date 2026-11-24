@@ -112,6 +112,12 @@ form.addEventListener("submit", (event) => {
   if (!form.reportValidity()) return;
 
   const message = buildMessage();
+ if (typeof gtag === "function") {
+  gtag("event", "quote_submit", {
+    quote_type: typeInput.value,
+    delivery_city: value("city") || "belirtilmedi"
+  });
+}
   const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank", "noopener,noreferrer");
 });
